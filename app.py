@@ -7,8 +7,8 @@ import pickle
 
 import sklearn
 # import the model
-pipe = pickle.load(open('pipe.pkl','rb'))
-df = pickle.load(open('df.pkl','rb'))
+pipe = joblib.load('pipe.sav')
+df = joblib.load('df.sav')
 
 st.title("LAPTOP PRICE PREDICTOR")
 
